@@ -1,163 +1,112 @@
-  
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	outline: none;
-	list-style: none;
+	outline: 0;
 	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 body{
-	background: #fafafa;
+	font-family: arial;
 	font-size: 14px;
+	color: #1c1e21;
+	font-weight: normal;
+	background: #f0f2f5
 }
-
-.wrapper .header{
-	max-width: 350px;
-	width: 100%;
-	height: auto;
-	margin: 50px auto;
+.loginsignup{
+	padding: 120px;
 }
-
-.wrapper .header .top,
-.wrapper .signup{
-	background: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 1px;
-    padding: 40px 40px 20px;
+.container{
+	max-width: 992px;
+	margin: auto;
 }
-
-.wrapper .header .logo img{
-	display: block;
-	margin: 0 auto 35px;
-}
-
-.wrapper .header .form .input_field{
-	margin-bottom: 5px;
-}
-
-.wrapper .header .form .input_field .input{
-	width: 100%;
-	background: #fafafa;
-	border: 1px solid #efefef;
-	font-size: 12px;
-	border-radius: 3px;
-	color: #262626;
-	padding: 10px;
-}
-
-.wrapper .header .form .input_field .input:focus{
-	border: 1px solid #b2b2b2;
-}
-
-.wrapper .header .form .btn{
-	margin: 10px 0;
-	background-color: #3897f0;
-    border: 1px solid #3897f0;
-    border-radius: 4px;
-    text-align: center;
-    padding: 5px;
-}
-
-.wrapper .header .form .btn a{
-	color: #fff;
-	display: block;
-}
-
-.wrapper .header .or{
+.row{
 	display: flex;
+	flex-wrap: wrap;
+}
+.justify-content-between{
 	justify-content: space-between;
-	align-items: center;
-	height: 15px;
-	margin: 15px 0 20px;
 }
-
-.wrapper .header .or .line{
-	width: 105px;
-	height: 2px;
-	background: #efefef
+.content-left{
+	max-width: 500px;
+	margin: auto;
 }
-
-.wrapper .header .or p{
-	color: #999;
-	font-size: 12px;
-}
-
-.wrapper .dif .fb{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.wrapper .dif .fb img{
-	width: 16px;
-	height: 16px;
-}
-
-.wrapper .dif  .fb p{
-	color: #385185;
-	font-weight: 500;
-	margin-left: 10px;
-}
-
-.wrapper .dif .forgot{
-	font-size: 12px;
-	text-align: center;
-	margin-top: 20px;
-}
-
-.wrapper .dif .forgot a{
-	color: #003569;
-}
-
-.wrapper .signup{
-	margin: 10px 0 20px;
-	padding: 25px 40px;
-	text-align: center;
-	color: #262626;
-}
-
-.wrapper .signup a{
-	color: #3897f0;
-}
-
-.wrapper .apps{
-	text-align: center;
-	color: #262626;
-}
-
-.wrapper .apps p{
+.content-left h1{
+	font-size: 50px;
+	color: #1877f2;
 	margin-bottom: 20px;
+	font-weight: 900;
 }
-
-.wrapper .apps a img{
-	width: 135px;
-	height: 40px;
-	margin: 0 5px;
+.content-left h2{
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 500;
+	margin-bottom: 40px;
 }
-
-.footer{
-	max-width: 935px;
+.content-right{
+	max-width: 450px;
+	margin: auto;
+	text-align: center;
+}
+.content-right form{
+	width: 400px;
+	height: 350px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 15px;
+	-webkit-box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	-moz-box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	margin-bottom: 30px;
+}
+.content-right form input{
 	width: 100%;
-	margin: 0 auto;
-	padding: 40px 0;
-	display: flex;
-	justify-content: space-between;
+	height: 50px;
+	font-size: 17px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 0 15px;
+	margin-bottom: 15px;
 }
-
-.footer .links ul li{
+.content-right form input:hover{
+	border: 2px solid #1c1e21;
+	background: #f0f2f5;
+}
+.btn{
+	font-size: 20px;
+	background: #1877f2;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.login a{
+	display: block;
+}
+.create-btn a{
 	display: inline-block;
-	margin-right: 10px;
+	margin-top: 20px;
+	padding: 0 17px;
+	background: #4cd137;
+	transition: .3s;
 }
-
-.footer .links ul li a{
-	color: #003569;
-	font-size: 12px;
+.create-btn a:hover{
+	background: #44bd32;
 }
-
-.footer .copyright{
-	color: #999;	
+.forgot a{
+	font-size: 14px;
+	line-height: 19px;
+	color:#1877f2;
+}
+.forgot a:hover,
+.content-right p a:hover{
+	text-decoration: underline;
+}
+.content-right p a{
+	color: #1c1e21;
+	font-weight: 600;
 }
